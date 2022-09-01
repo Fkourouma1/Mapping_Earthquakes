@@ -11,6 +11,7 @@ cityData.forEach(function(city) {
         radius:  city.population/200000,
         color: "orange",
         fillColor: "orange",
+
     })
     .bindPopup("<h2>" + city.city + ", " + city.state + "</h2> <hr> <h3>Population " + city.population.toLocaleString() + "</h3>")
   .addTo(map);
